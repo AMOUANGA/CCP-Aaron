@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}  IRON-GRAPH{% endblock %}
+{% block h1 %} 
+        {% if app.user %}
+                BONJOUR {{ app.user.prenom }}
+        {% else %}
+        BIENVENUE
+        {% endif %}
+{% endblock %}
+
+{% block body %}
+{#  {{ dump(app.user) }} #}
+
+{{ dump(app.user) }}
+
+{% endblock %}
